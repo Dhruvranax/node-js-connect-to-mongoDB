@@ -10,7 +10,7 @@ async function getData() {
         let collection = db.collection('new');
         let data = await collection.find({}).toArray();
         await collection.insertOne(
-            {_id: 5,name: 'rajesh', subject: 'node js '}
+            {_id: 1,name: 'rajesh', subject: 'node js '}
 
         ) 
         console.log(data);
@@ -24,3 +24,4 @@ async function getData() {
     }
 }
 getData();
+
